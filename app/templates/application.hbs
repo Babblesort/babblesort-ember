@@ -1,9 +1,28 @@
-<h3 id="title">Paul McConnell</h3>
-<hr/>
+<h2 id="title">Paul McConnell</h2>
 
-<ul class="nav nav-pills">
-  <li role="presentation" class="active">{{link-to 'Home' 'home'}}</li>
-  <li role="presentation">{{link-to 'Resume' 'resume'}}</li>
-</ul>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Babblesort</a>
+    </div>
 
-{{outlet}}
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>{{link-to 'Home' 'home'}}</li>
+        <li>{{link-to 'Resume' 'resume'}}</li>
+        <li>{{link-to 'About This Site' 'about'}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  {{outlet}}
+</div>
