@@ -6,6 +6,15 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  var pickFiles = require('broccoli-static-compiler');
+  var bootstrapFonts = pickFiles('bower_components/bootstrap-sass-official/assets/fonts/bootstrap', {
+      srcDir: '/',
+      destDir: '/assets/bootstrap'
+  });
+
+  // Merge the bootstrapFonts with the ember app tree
+  var mergeTrees = require('broccoli-merge-trees');
+  //module.exports = mergeTrees([app.toTree(),bootstrapFonts]);
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
@@ -19,5 +28,6 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return app.toTree();
+  //return app.toTree();
+  return mergeTrees([app.toTree(),bootstrapFonts]);
 };
