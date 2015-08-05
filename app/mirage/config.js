@@ -1,55 +1,8 @@
 export default function() {
 
-  // These comments are here to help you get started. Feel free to delete them.
+  this.namespace = 'api';
 
-  /*
-    Config (with defaults).
-
-    Note: these only affect routes defined *after* them!
-  */
-  // this.namespace = '';    // make this `api`, for example, if your API is namespaced
-  // this.timing = 400;      // delay for each request, automatically set to 0 during testing
-
-  /*
-    Route shorthand cheatsheet
-  */
-  /*
-    GET shorthands
-
-    // Collections
-    this.get('/contacts');
-    this.get('/contacts', 'users');
-    this.get('/contacts', ['contacts', 'addresses']);
-
-    // Single objects
-    this.get('/contacts/:id');
-    this.get('/contacts/:id', 'user');
-    this.get('/contacts/:id', ['contact', 'addresses']);
-  */
-
-  /*
-    POST shorthands
-
-    this.post('/contacts');
-    this.post('/contacts', 'user'); // specify the type of resource to be created
-  */
-
-  /*
-    PUT shorthands
-
-    this.put('/contacts/:id');
-    this.put('/contacts/:id', 'user'); // specify the type of resource to be updated
-  */
-
-  /*
-    DELETE shorthands
-
-    this.del('/contacts/:id');
-    this.del('/contacts/:id', 'user'); // specify the type of resource to be deleted
-
-    // Single object + related resources. Make sure parent resource is first.
-    this.del('/contacts/:id', ['contact', 'addresses']);
-  */
+  this.get('/jobs');
 
   /*
     Function fallback. Manipulate data in the db via
@@ -72,10 +25,3 @@ export default function() {
 
   */
 }
-
-/*
-You can optionally export a config that is only loaded during tests
-export function testConfig() {
-
-}
-*/
