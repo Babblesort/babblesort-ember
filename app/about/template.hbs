@@ -1,3 +1,9 @@
-<h3>About This Site</h3>
-
-built with ember.js
+{{#md-card title='This site was built with the following' class='blue-text text-darken-2'}}
+    {{#md-card-content}}
+      {{#md-collection content=model as |item|}}
+        <div class='collection-item'>
+          {{item}}
+        </div>
+      {{/md-collection}}
+    {{/md-card-content}}
+{{/md-card}}

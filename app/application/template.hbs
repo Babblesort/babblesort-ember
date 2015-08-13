@@ -1,43 +1,13 @@
-<h2 id="title">Paul McConnell</h2>
+{{#md-navbar name='Babblesort' class='orange lighten-2' homeRoute='home'}}
+  {{#link-to 'home' tagName='li'}}
+    {{link-to 'Home' 'home'}}
+  {{/link-to}}
+  {{#link-to 'resume' tagName='li'}}
+    {{link-to 'Resumé' 'resume'}}
+  {{/link-to}}
+  {{#link-to 'about' tagName='li'}}
+    {{link-to 'About this site' 'about'}}
+  {{/link-to}}
+{{/md-navbar}}
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">Babblesort</span>
-    </div>
-
-    <div class="collapse navbar-collapse" id="site-navbar-collapse">
-      <ul class="nav navbar-nav">
-        {{#link-to 'home' tagName="li" href=false}}
-            {{#link-to 'home' bubbles=false}}
-                Home
-            {{/link-to}}
-        {{/link-to}}
-
-        {{#link-to 'resume' tagName="li" href=false}}
-            {{#link-to 'resume' bubbles=false}}
-                Resumé
-            {{/link-to}}
-        {{/link-to}}
-
-        {{#link-to 'about' tagName="li" href=false}}
-            {{#link-to 'about' bubbles=false}}
-                About This Site
-            {{/link-to}}
-        {{/link-to}}
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
-<div class="container">
-  {{outlet}}
-</div>
+{{outlet}}
