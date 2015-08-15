@@ -7,7 +7,8 @@ export default Ember.Route.extend({
       'ember js',
       'ember-cli',
       'ember-cli-materialize',
-    ])
+      'liquid-fire'
+    ]);
     return buildItems;
   }
 
