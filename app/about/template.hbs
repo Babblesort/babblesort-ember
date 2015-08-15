@@ -2,7 +2,9 @@
     {{#md-card-content}}
       {{#md-collection content=model as |item|}}
         <div class='collection-item'>
-          {{item}}
+          {{item.lib}}
+          <div>{{item.details.description}}</div>
+          <div>{{item.details.url}}</div>
         </div>
       {{/md-collection}}
     {{/md-card-content}}
