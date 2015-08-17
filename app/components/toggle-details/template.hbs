@@ -1,0 +1,19 @@
+<div class='row' {{action 'toggleDetails'}}>
+  <div class='col s1'>
+    <i class='material-icons medium'>
+      {{#if detailsVisible}}
+        keyboard_arrow_right
+      {{else}}
+        keyboard_arrow_down
+      {{/if}}
+    </i>
+  </div>
+  <div class='col s11'>
+    <h5>{{item.lib}}</h5>
+  </div>
+</div>
+
+{{#liquid-if detailsVisible class="detailsVisible row"}}
+    <div class='col s11 offset-s1'>{{item.details.description}}</div>
+    <div class='col s11 offset-s1'>{{item.details.url}}</div>
+{{/liquid-if}}

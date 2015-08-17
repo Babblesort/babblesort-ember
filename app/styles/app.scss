@@ -1,2 +1,10 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+.toggle-target{
+  cursor: pointer;
+}
+
+.row {
+  margin-bottom: 5px;
+}

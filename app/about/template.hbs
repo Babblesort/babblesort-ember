@@ -1,11 +1,4 @@
-{{#md-card title='This site was built with the following' class='blue-text text-darken-2'}}
-    {{#md-card-content}}
-      {{#md-collection content=model as |item|}}
-        <div class='collection-item'>
-          {{item.lib}}
-          <div>{{item.details.description}}</div>
-          <div>{{item.details.url}}</div>
-        </div>
-      {{/md-collection}}
-    {{/md-card-content}}
-{{/md-card}}
+<h4>This site was built with the following</h4>
+{{#each model as |item|}}
+  {{toggle-details item=item}}
+{{/each}}

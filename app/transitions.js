@@ -19,4 +19,11 @@ export default function(){
     this.use('toLeft'),
     this.reverse('toRight')
   );
+
+  this.transition(
+    this.hasClass('detailsVisible'),
+    this.toValue(true),
+    this.use('toDown', { duration: 250 }),
+    this.reverse('toUp', { duration: 100 })
+  );
 }
