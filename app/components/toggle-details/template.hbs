@@ -1,19 +1,18 @@
 <div class='row' {{action 'toggleDetails'}}>
   <div class='col s1'>
-    <i class='material-icons medium'>
+    <i class='material-icons small blue-text text-darken-4'>
       {{#if detailsVisible}}
-        keyboard_arrow_right
+        remove_circle_outline
       {{else}}
-        keyboard_arrow_down
+        add_circle_outline
       {{/if}}
     </i>
   </div>
   <div class='col s11'>
-    <h5>{{item.lib}}</h5>
+    <h6 class='blue-text text-darken-4'>{{item.lib}}</h6>
+    {{#liquid-if detailsVisible class='detailsVisible'}}
+          <p>{{item.details.description}}</p>
+          <p>{{item.details.url}}</p>
+    {{/liquid-if}}
   </div>
 </div>
-
-{{#liquid-if detailsVisible class="detailsVisible row"}}
-    <div class='col s11 offset-s1'>{{item.details.description}}</div>
-    <div class='col s11 offset-s1'>{{item.details.url}}</div>
-{{/liquid-if}}
