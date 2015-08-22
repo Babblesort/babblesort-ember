@@ -1,25 +1,25 @@
 <div class='row'>
-  <div class='col s1 toggle-target' {{action 'toggleDetails'}}>
-    <i class='material-icons small blue-text text-darken-4 toggle-target'>
-      {{#if detailsVisible}}
-        remove_circle_outline
-      {{else}}
-        add_circle_outline
-      {{/if}}
-    </i>
-  </div>
-  <div class='col s11'>
-    <h6 class='blue-text text-darken-4 toggle-target' {{action 'toggleDetails'}}>{{item.libraryName}} - {{item.version}}</h6>
-    {{#liquid-if detailsVisible class='detailsVisible'}}
-      <div class='row'>
-        <div class='col s4 toggle-target' {{action 'toggleDetails'}}>
-          <img src="assets/images/{{item.image}}" height="100" width="100">
-        </div>
-        <div class='col s8'>
-          <p>{{item.description}}</p>
-          <a href="{{item.url}}">{{item.url}}</a>
-        </div>
-      </div>
-    {{/liquid-if}}
-  </div>
+    <div class='col s1 toggle-target' {{action 'toggleDetails'}}>
+        <i class='material-icons small blue-text text-darken-4 toggle-target'>
+            {{#if detailsVisible}}
+                remove_circle_outline
+            {{else}}
+                add_circle_outline
+            {{/if}}
+        </i>
+    </div>
+    <div class='col s11'>
+        <h6 class='blue-text text-darken-4 toggle-target' {{action 'toggleDetails'}}>{{item.libraryName}} - {{item.version}}</h6>
+        {{#liquid-if detailsVisible class='detailsVisible'}}
+            <div class='row'>
+                <div class='col s4 toggle-target' {{action 'toggleDetails'}}>
+                    <img src="assets/images/{{item.image}}" height="100" width="100">
+                </div>
+                <div class='col s8'>
+                    <p>{{item.description}}</p>
+                    <a href="{{item.url}}">{{item.url}}</a>
+                </div>
+            </div>
+        {{/liquid-if}}
+    </div>
 </div>
