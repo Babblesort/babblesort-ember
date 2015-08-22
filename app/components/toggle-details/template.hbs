@@ -9,10 +9,11 @@
     </i>
   </div>
   <div class='col s11'>
-    <h6 class='blue-text text-darken-4'>{{item.lib}}</h6>
+    <h6 class='blue-text text-darken-4'>{{item.libraryName}} - {{item.version}}</h6>
     {{#liquid-if detailsVisible class='detailsVisible'}}
-          <p>{{item.details.description}}</p>
-          <p>{{item.details.url}}</p>
+          <p>{{item.image}}</p>
+          <p>{{item.description}}</p>
+          <p>{{item.url}}</p>
     {{/liquid-if}}
   </div>
 </div>
