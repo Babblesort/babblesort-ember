@@ -2,5 +2,8 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   libraryName: DS.attr('string'),
-  details: DS.belongsTo('about-site-item-details')
+  version: DS.attr('string'),
+  image: DS.attr('string'),
+  description: DS.attr('string'),
+  url: DS.attr('string')
 });
