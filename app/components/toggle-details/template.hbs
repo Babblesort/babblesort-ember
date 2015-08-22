@@ -1,6 +1,6 @@
-<div class='row' {{action 'toggleDetails'}}>
-  <div class='col s1'>
-    <i class='material-icons small blue-text text-darken-4'>
+<div class='row'>
+  <div class='col s1 toggle-target' {{action 'toggleDetails'}}>
+    <i class='material-icons small blue-text text-darken-4 toggle-target'>
       {{#if detailsVisible}}
         remove_circle_outline
       {{else}}
