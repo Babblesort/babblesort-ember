@@ -30,5 +30,13 @@ export default [
         image: 'github.png',
         description: 'Animation and transition library for ember applications',
         url: 'http://ef4.github.io/liquid-fire/'
+    },
+    {
+        id: 5,
+        libraryName: 'ember-cli-mirage',
+        version: '0.1.6',
+        image: 'github.png',
+        description: 'API mock server and data fixtures',
+        url: 'http://www.ember-cli-mirage.com/'
     }
 ];
