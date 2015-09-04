@@ -7,5 +7,9 @@ module.exports = function(defaults) {
 			includePaths: ['bower_components/materialize/sass']
 		}
 	});
+
+	app.import('bower_components/dragula.min.js');
+	app.import('bower_components/dragula.min.css');
+
 	return app.toTree();
 };
