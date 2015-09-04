@@ -38,5 +38,13 @@ export default [
         image: 'github.png',
         description: 'API mock server and data fixtures',
         url: 'http://www.ember-cli-mirage.com/'
+    },
+    {
+        id: 6,
+        libraryName: 'dragula.js',
+        version: '3.1.0',
+        image: 'dragula.svg',
+        description: 'Javascript drag and drop library',
+        url: 'http://bevacqua.github.io/dragula/'
     }
 ];
