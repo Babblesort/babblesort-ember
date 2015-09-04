@@ -9,6 +9,10 @@
   margin-bottom: 0px;
 }
 
+.dragula-container {
+	min-height: 75px;
+}
+
 .dragula-drake .dragula-container > div {
     cursor: move;
     cursor: -webkit-grab;	
