@@ -14,12 +14,12 @@ module.exports = function(environment) {
         },
         contentSecurityPolicy: {
             "default-src": "'none'",
-            "script-src": "'self' 'unsafe-inline' 'unsafe-eval'",
+            "script-src": "'self' 'unsafe-inline' 'unsafe-eval' ws://mint-vm http://mint-vm:49152",
             "font-src": "'self' https://fonts.gstatic.com",
-            "connect-src": "'self'",
+            "connect-src": "'self' ws://mint-vm:49152/livereload",
             "img-src": "'self'",
             "report-uri": "'localhost'",
-            "style-src": "'self' 'unsafe-inline' https://fonts.googleapis.com",
+            "style-src": "'self' 'unsafe-inline' https://fonts.googleapis.com ws://mint-vm",
             "frame-src": "'none'"
         },
 

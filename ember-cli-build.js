@@ -8,8 +8,8 @@ module.exports = function(defaults) {
 		}
 	});
 
-	app.import('bower_components/dragula.min.js');
-	app.import('bower_components/dragula.min.css');
+	app.import('bower_components/dragula/dist/dragula.min.js');
+	app.import('bower_components/dragula/dist/dragula.min.css');
 
 	return app.toTree();
 };
