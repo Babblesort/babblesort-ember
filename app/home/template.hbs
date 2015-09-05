@@ -1,17 +1,31 @@
 <h3>Home</h3>
 
-{{#dragula-drake class='row'}}
+{{#dragula-drake}}
 
-	{{#dragula-container class='col s6'}}
-		<div>one</div>
-		<div>two</div>
-		<div>three</div>
-	{{/dragula-container}}
+	<div class="shopping-list">
+		{{#dragula-container}}
 
-	{{#dragula-container class='col s6'}}
-		<div>four</div>
-		<div>five</div>
-		<div>six</div>
-	{{/dragula-container}}
+			<div class="shopping-category">
+				{{#dragula-container}}
+					<div class="shopping-item">Thing one</div>
+					<div class="shopping-item">Thing two</div>
+					<div class="shopping-item">Thing three</div>
+					<div class="shopping-item">Thing four</div>
+				{{/dragula-container}}
+			</div>
+
+			<div class="shopping-category">
+				{{#dragula-container}}
+					<div class="shopping-item">Thing five</div>
+					<div class="shopping-item">Thing six</div>
+					<div class="shopping-item">Thing seven</div>
+					<div class="shopping-item">Thing eight</div>
+				{{/dragula-container}}
+			</div>
+
+		{{/dragula-container}}
+	</div>
 
 {{/dragula-drake}}
+
+
