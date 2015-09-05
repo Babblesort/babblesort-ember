@@ -3,19 +3,25 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
 	classNames: ['dragula-drake'],
-	drake: null,
 
+	eventBus: Ember.inject.service('dragula-event-bus'),
+	drake: null,
 	registeredContainers: [],
 
-	willInsertElement:function(){
+	willInsertElement: function() {
 		this.set('drake', window.dragula());
 	},
-	registerContainer: function (container) {
 
+	_listen: Ember.on('init', function() {
+		this.get('eventBus').on('register', this, 'registerContainer');
+	}),
+
+	registerContainer: function (container) {
 		if(this.get('drake')) {
 			this.get('drake').containers.pushObject(container.el);
 		}
 	},
+
 	willDestroyElement:function(){
 		this.drake.destroy();
 		this.set('drake', null);
