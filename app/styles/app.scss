@@ -9,34 +9,53 @@
   margin-bottom: 0px;
 }
 
-.dragula-container {
-	min-height: 75px;
-}
-
-.dragula-drake .dragula-container > div {
-    cursor: move;
-    cursor: -webkit-grab;	
-}
-
-.dragula-container > div, .gu-mirror {
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: opacity 0.4s ease-in-out;
-    cursor: move;
-    cursor: -webkit-grab;	
-}
-
 .shopping-list {
-	width: 50%;
+	background: gray;
+	padding: 5px;
+	border: 1px solid red;
 }
 
 .shopping-category {
-	background: gray;
-	border-bottom: 1px solid black;
-	padding: 50px 10px 10px 10px;
-	margin-bottom: 6px;
+	background: blue;
+	border: 1px solid black;
+	margin-top: 5px;
+	padding: 25px 5px 5px 5px;
 }
 
 .shopping-item {
-	margin: 8px;
+	background: green;
+	margin-top: 9px;
+	padding: 3px;
 }
+
+// .dragula-container {
+// 	min-height: 75px;
+// }
+
+// .dragula-drake .dragula-container > div {
+//     cursor: move;
+//     cursor: -webkit-grab;	
+// }
+
+// .dragula-container > div, .gu-mirror {
+//     background-color: rgba(0, 0, 0, 0.1);
+//     transition: opacity 0.4s ease-in-out;
+//     cursor: move;
+//     cursor: -webkit-grab;	
+// }
+
+// .shopping-list {
+// 	width: 50%;
+// }
+
+// .shopping-category {
+// 	background: gray;
+// 	border-bottom: 1px solid black;
+// 	padding: 50px 10px 10px 10px;
+// 	margin-bottom: 6px;
+// }
+
+// .shopping-item {
+// 	margin: 8px;
+// }
 
