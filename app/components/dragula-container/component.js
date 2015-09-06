@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
 	eventBus: Ember.inject.service('dragula-event-bus'),
-	classNames: ['dragula-container'],
 
 	_registerEventBody: function() {
 		return {
