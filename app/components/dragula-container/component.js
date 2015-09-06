@@ -9,7 +9,7 @@ export default Ember.Component.extend({
 		return {
 			component: this,
 			el: this.$()[0]
-		}
+		};
 	},
 
 	didInsertElement: function () {
