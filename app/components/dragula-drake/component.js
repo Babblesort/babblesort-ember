@@ -4,6 +4,7 @@ import globals from 'babblesort/utils/globals';
 export default Ember.Component.extend({
 
 	eventBus: Ember.inject.service('dragula-event-bus'),
+	classNames: ['dragula-drake'],
 	drake: null,
 	registeredContainers: [],
 
